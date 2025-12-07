@@ -142,27 +142,6 @@ export default function BoreholeMaintencePage() {
                   resistance is measured—degradation indicates impending electrical failure requiring cable replacement.
                 </p>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong>Valve and Plumbing Inspection:</strong> All isolation valves are operated and lubricated to
-                  prevent seizure. Non-return valves are tested to ensure proper sealing—faulty check valves cause
-                  water hammer and pump damage. Pipe connections are inspected for leaks, corrosion, and structural
-                  integrity. Any underground leaks are detected through pressure testing.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong>Water Quality Testing:</strong> We collect water samples for bacterial analysis, testing for
-                  E.coli and total coliform bacteria. Chemical analysis measures pH, total dissolved solids, nitrates,
-                  and potentially harmful minerals. Results are compared against SANS 241 drinking water standards. If
-                  contamination is detected, we recommend appropriate treatment solutions.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong>System Efficiency Optimization:</strong> Pressure settings are fine-tuned for optimal
-                  performance and energy efficiency. Timer settings (if installed) are adjusted seasonally. We provide
-                  recommendations for improving efficiency—sometimes simple adjustments save 15-25% on electricity
-                  consumption.
-                </p>
-
                 <ul className="space-y-3 mt-6">
                   <li className="flex gap-3 text-muted-foreground">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -223,20 +202,6 @@ export default function BoreholeMaintencePage() {
                   fires causing extensive property damage.
                 </p>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong>Non-Return Valve Failure:</strong> Check valves prevent backflow when the pump stops. Failed
-                  check valves cause water hammer—pressure surges that crack pipes and damage pump seals. We test check
-                  valves annually and replace when needed (ZAR 650-1,200). Undetected failures cause burst pipes
-                  requiring emergency repairs costing ZAR 4,000-8,000.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong>Water Quality Degradation:</strong> Bacterial contamination develops gradually in boreholes,
-                  especially during warm seasons. Annual water testing detects problems early when shock chlorination
-                  (ZAR 800-1,400) resolves the issue. Severe contamination requires professional borehole disinfection
-                  (ZAR 3,500-6,000) and sometimes UV sterilization installation (ZAR 8,000-12,000).
-                </p>
-
                 <h3 className="text-2xl font-bold mt-8 mb-4">Maintenance Service Plans & Pricing</h3>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -288,7 +253,7 @@ export default function BoreholeMaintencePage() {
                     <li>• All routine repairs included in plan</li>
                     <li>• 20% discount on major component replacement</li>
                     <li className="font-semibold text-accent pt-2">Annual Cost: ZAR 6,500 - 12,000</li>
-                    <li className="text-xs pt-2">Best for: Commercial properties, industrial operations, high-dependency applications</li>
+                    <li className="text-xs pt-2">Best for: Commercial properties, industrial operations</li>
                   </ul>
                 </div>
 
@@ -307,13 +272,6 @@ export default function BoreholeMaintencePage() {
                   prevents costly downtime.
                 </p>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  Between scheduled maintenance visits, monitor your system for warning signs requiring immediate
-                  attention: sudden drops in water pressure, unusual pump noises or vibration, increased electricity
-                  consumption, discolored or cloudy water, intermittent operation or frequent pump cycling. These
-                  symptoms indicate developing problems requiring professional diagnosis.
-                </p>
-
                 <h3 className="text-2xl font-bold mt-8 mb-4">Emergency Repair Services</h3>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -327,63 +285,6 @@ export default function BoreholeMaintencePage() {
                   safety hazards, burst pipes and major leaks, pressure system failures, contaminated water requiring
                   immediate remediation. Our emergency callout includes diagnostic fee (ZAR 850-1,200) credited toward
                   repairs if you proceed with our quote.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  Maintenance plan members receive priority emergency response—typically within 2-4 hours. Standard
-                  emergency calls are responded to within 6-12 hours. We maintain comprehensive parts inventory enabling
-                  same-day repairs for most common failures. For major component replacement requiring ordering, we
-                  often provide temporary pumps maintaining water supply during repairs.
-                </p>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4">DIY Maintenance: What Homeowners Can Do</h3>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  While professional maintenance is essential, homeowners can perform basic checks between service
-                  visits:
-                </p>
-
-                <ul className="space-y-3">
-                  <li className="flex gap-3 text-muted-foreground">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Listen for unusual noises:</strong> Grinding, rattling, or excessive vibration indicates
-                      mechanical problems
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-muted-foreground">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Monitor water pressure:</strong> Install a pressure gauge and note baseline reading—significant
-                      changes indicate issues
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-muted-foreground">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Check electrical panel:</strong> Look for tripped breakers or burnt smells near borehole
-                      circuits
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-muted-foreground">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Observe water quality:</strong> Cloudiness, discoloration, or odor changes require
-                      professional testing
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-muted-foreground">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Track electricity usage:</strong> Sudden increases in consumption often indicate pump inefficiency
-                    </span>
-                  </li>
-                </ul>
-
-                <p className="text-muted-foreground leading-relaxed mt-4">
-                  Never attempt DIY pump removal, electrical repairs, or complex troubleshooting. Boreholes involve
-                  electrical hazards, heavy equipment, and specialized knowledge. Improper DIY work voids warranties,
-                  creates safety hazards, and often causes more damage than the original problem.
                 </p>
 
                 <h3 className="text-2xl font-bold mt-8 mb-4">The True Cost of Neglecting Maintenance</h3>
@@ -402,19 +303,7 @@ export default function BoreholeMaintencePage() {
                   shortened lifespan.
                 </p>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  Beyond direct repair costs, consider inconvenience: loss of water supply for days during repairs,
-                  emergency accommodation costs if your property becomes uninhabitable, business downtime for commercial
-                  properties, potential property damage from leaks or floods. Maintenance plan members avoid these
-                  disruptions through proactive care and priority emergency response.
-                </p>
-
                 <h3 className="text-2xl font-bold mt-8 mb-4">Why Choose Borehole Pros for Maintenance</h3>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  Our maintenance service stands apart through technical expertise, comprehensive approach, and genuine
-                  commitment to customer satisfaction. Here's what makes us different:
-                </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                   <div className="bg-muted p-4 rounded-lg">
@@ -438,26 +327,10 @@ export default function BoreholeMaintencePage() {
                   <div className="bg-muted p-4 rounded-lg">
                     <p className="font-semibold text-sm mb-2">1,200+ Systems Maintained</p>
                     <p className="text-xs text-muted-foreground">
-                      Proven track record since 2009. Long-term relationships with customers—many since installation.
+                      Proven track record since 2009. Long-term relationships with customers.
                     </p>
                   </div>
                 </div>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4">Getting Started with Maintenance Service</h3>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  Starting maintenance service is straightforward. Contact us to schedule an initial assessment—we'll
-                  inspect your system, identify any existing issues, and recommend the appropriate maintenance plan for
-                  your needs. If repairs are needed, we provide detailed quotes and can complete work during the same
-                  visit.
-                </p>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  After your first service, we schedule annual visits at your preferred time. Automated reminders ensure
-                  you never miss scheduled maintenance. We maintain complete service history for every system—valuable
-                  records if you sell your property or need warranty claims. For multi-property owners or commercial
-                  clients, we offer consolidated billing and coordinated service scheduling.
-                </p>
               </div>
             </div>
 
@@ -510,6 +383,18 @@ export default function BoreholeMaintencePage() {
                 <Card className="p-6 bg-muted">
                   <h3 className="font-bold mb-3 text-sm">Service Includes</h3>
                   <ul className="space-y-2 text-xs text-muted-foreground">
+                    <li className="flex gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                      <span>Pump performance testing</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                      <span>Electrical safety inspection</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                      <span>Pressure system calibration</span>
+                    </li>
                     <li className="flex gap-2">
                       <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
                       <span>Water quality testing</span>
@@ -738,16 +623,4 @@ export default function BoreholeMaintencePage() {
       />
     </>
   )
-} text-accent flex-shrink-0 mt-0.5" />
-                      <span>Pump performance testing</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                      <span>Electrical safety inspection</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                      <span>Pressure system calibration</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <CheckCircle2 className="w-4 h-4
+}
