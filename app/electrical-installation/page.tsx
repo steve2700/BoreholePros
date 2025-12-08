@@ -23,13 +23,14 @@ const services: ServiceItem[] = [
   {
     title: "Pump Electrical Wiring",
     description: "Professional pump wiring with correctly sized cables, waterproof connections, and proper voltage drop calculations.",
+    href: "/contact",
     icon: <Cable className="w-8 h-8" />,
     image: "/images/pump-wiring.jpg",
   },
   {
     title: "Control Box Installation",
     description: "Complete control box setup with earth leakage protection, overload safeguards, and automatic controls.",
-    href: "/control-boxes",
+    href: "/contact",
     icon: <Settings className="w-8 h-8" />,
     image: "/images/control-box.jpg",
     highlight: true,
@@ -37,7 +38,7 @@ const services: ServiceItem[] = [
   {
     title: "Electrical Protection Systems",
     description: "Comprehensive protection including surge arrestors, earth leakage devices, and lightning protection.",
-    href: "/electrical-protection",
+    href: "/pump-repair",
     icon: <Shield className="w-8 h-8" />,
     image: "/images/surge-protection.jpg",
   },
