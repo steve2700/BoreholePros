@@ -25,7 +25,7 @@ const services: ServiceItem[] = [
     description: "Installation of pressure vessels with automatic controllers ensuring consistent water pressure throughout your property.",
     href: "/pressure-tanks",
     icon: <Battery className="w-8 h-8" />,
-    image: "/images/pressure-tank.jpg",
+    image: "/images/pressure-system.jpg",
   },
   {
     title: "VSD Controller Installation",
@@ -40,7 +40,7 @@ const services: ServiceItem[] = [
     description: "Upgrade existing systems to modern constant pressure technology for improved performance and efficiency.",
     href: "/system-upgrades",
     icon: <Gauge className="w-8 h-8" />,
-    image: "/images/pressure-upgrade.jpg",
+    image: "/images/pressure-system.jpg",
   },
 ]
 
