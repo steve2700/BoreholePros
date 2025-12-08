@@ -37,7 +37,7 @@ const services: ServiceItem[] = [
   {
     title: "Pump Replacement",
     description: "Fast pump replacement service with removal of old pump and new installation.",
-    href: "/pump-replacement",
+    href: "/pump-repair",
     icon: <Wrench className="w-8 h-8" />,
     highlight: true,
     image: "/images/pump-replacement.jpg",
