@@ -23,6 +23,7 @@ const services: ServiceItem[] = [
   {
     title: "Annual Service Plans",
     description: "Comprehensive yearly maintenance keeping your borehole running perfectly for decades.",
+    href: "/borehole-installation",
     icon: <ClipboardCheck className="w-8 h-8" />,
     image: "/images/annual-service.jpg",
   },
@@ -43,7 +44,7 @@ const services: ServiceItem[] = [
   },
 ]
 
-export default function BoreholeMaintenancePage() {
+export default function BoreholeMaintencePage() {
   return (
     <>
       <Hero
@@ -442,22 +443,22 @@ export default function BoreholeMaintenancePage() {
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/water-testing" className="hover:text-accent transition-colors">
-                  Water Testing Services
+                <Link href="/borehole-installation" className="hover:text-accent transition-colors">
+                  Water Quality Testing
                 </Link>
               </h3>
               <p className="text-muted-foreground mb-4">
                 Comprehensive water analysis for safety and compliance. Bacterial and chemical testing with SANS 241
                 certification and treatment recommendations.
               </p>
-              <Link href="/water-testing" className="text-accent font-semibold hover:underline">
+              <Link href="/borehole-installation" className="text-accent font-semibold hover:underline">
                 Learn More →
               </Link>
             </Card>
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/pressure-system-repair" className="hover:text-accent transition-colors">
+                <Link href="/pressure-system" className="hover:text-accent transition-colors">
                   Pressure System Repair
                 </Link>
               </h3>
@@ -472,7 +473,7 @@ export default function BoreholeMaintenancePage() {
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/pump-inspection" className="hover:text-accent transition-colors">
+                <Link href="/borehole-installation" className="hover:text-accent transition-colors">
                   Pre-Purchase Inspections
                 </Link>
               </h3>
@@ -480,7 +481,7 @@ export default function BoreholeMaintenancePage() {
                 Buying property with a borehole? Get professional inspection before purchase. We assess condition,
                 identify issues, and provide repair cost estimates.
               </p>
-              <Link href="/pump-inspection" className="text-accent font-semibold hover:underline">
+              <Link href="/borehole-installation" className="text-accent font-semibold hover:underline">
                 Learn More →
               </Link>
             </Card>
