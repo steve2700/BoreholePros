@@ -1,4 +1,63 @@
-  <ServicesGrid
+import type { Metadata } from "next"
+import Link from "next/link"
+import { Hero } from "@/components/sections/hero"
+import { ServicesGrid, type ServiceItem } from "@/components/sections/services-grid"
+import { TrustSignals } from "@/components/sections/trust-signals"
+import { CTASection } from "@/components/sections/cta-section"
+import { Card } from "@/components/ui/card"
+import { Wrench, CheckCircle2, Phone, Zap, Settings, Droplet } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Submersible Pump Installation | Professional Borehole Pump Setup Services",
+  description:
+    "Expert submersible pump installation for boreholes. Professional setup, electrical connection & testing. Grundfos, Pedrollo & Franklin pumps. Call 060 348 8268.",
+  keywords:
+    "pump installation, submersible pump installation, borehole pump installation, water pump installation, pump setup, pump replacement",
+  openGraph: {
+    title: "Professional Pump Installation Services | Submersible Borehole Pumps",
+    description: "Expert pump installation with certified technicians. Quality pumps and professional setup.",
+  },
+}
+
+const services: ServiceItem[] = [
+  {
+    title: "Submersible Pump Installation",
+    description: "Professional installation of high-quality submersible pumps at optimal depth.",
+    href: "/contact",
+    icon: <Droplet className="w-8 h-8" />,
+    image: "/images/submersible-pump.jpg",
+  },
+  {
+    title: "Electrical Connection",
+    description: "Safe electrical setup with circuit protection and automatic control systems.",
+    href: "/electrical-installation",
+    icon: <Zap className="w-8 h-8" />,
+    image: "/images/electrical-connection.jpg",
+  },
+  {
+    title: "Pump Replacement",
+    description: "Fast pump replacement service with removal of old pump and new installation.",
+    icon: <Wrench className="w-8 h-8" />,
+    highlight: true,
+    image: "/images/pump-replacement.jpg",
+  },
+]
+
+export default function PumpInstallationPage() {
+  return (
+    <>
+      <Hero
+        title="Professional Submersible Pump Installation Services"
+        subtitle="Expert Installation | Quality Pumps | Safe Electrical Setup"
+        description="Professional submersible pump installation for boreholes. We install Grundfos, Pedrollo, and Franklin pumps with proper electrical connection and testing. Certified technicians ensure optimal performance and longevity. Call 060 348 8268."
+        imageSrc="/images/pump-installation.jpg"
+        cta={{
+          primary: { text: "Get Installation Quote", href: "/contact" },
+          secondary: { text: "Call: 060 348 8268", href: "tel:0603488268" },
+        }}
+      />
+
+<ServicesGrid
     title="Complete Pump Installation Solutions"
     description="From pump selection to electrical connection, we provide end-to-end installation services ensuring reliable water supply for decades."
     services={services}
