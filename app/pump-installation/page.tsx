@@ -30,7 +30,7 @@ const services: ServiceItem[] = [
   {
     title: "Electrical Connection",
     description: "Safe electrical setup with circuit protection and automatic control systems.",
-    href: "/electrical-setup",
+    href: "/electrical-installation",
     icon: <Zap className="w-8 h-8" />,
     image: "/images/electrical-connection.jpg",
   },
