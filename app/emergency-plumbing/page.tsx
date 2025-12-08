@@ -27,7 +27,7 @@ const emergencyServices: ServiceItem[] = [
   {
     title: "Blocked Drains",
     description: "Fast drain unblocking service to restore normal drainage quickly.",
-    href: "#",
+    href: "/blocked-drain-johannesburg",
   },
   {
     title: "Water Leaks",
