@@ -23,21 +23,20 @@ const services: ServiceItem[] = [
   {
     title: "Submersible Pump Installation",
     description: "Professional installation of high-quality submersible pumps at optimal depth.",
-    href: "/submersible-pump",
+    href: "/contact",
     icon: <Droplet className="w-8 h-8" />,
     image: "/images/submersible-pump.jpg",
   },
   {
     title: "Electrical Connection",
     description: "Safe electrical setup with circuit protection and automatic control systems.",
-    href: "/electrical-setup",
+    href: "/electrical-installation",
     icon: <Zap className="w-8 h-8" />,
     image: "/images/electrical-connection.jpg",
   },
   {
     title: "Pump Replacement",
     description: "Fast pump replacement service with removal of old pump and new installation.",
-    href: "/pump-replacement",
     icon: <Wrench className="w-8 h-8" />,
     highlight: true,
     image: "/images/pump-replacement.jpg",
