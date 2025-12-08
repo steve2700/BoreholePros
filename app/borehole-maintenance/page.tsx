@@ -23,7 +23,6 @@ const services: ServiceItem[] = [
   {
     title: "Annual Service Plans",
     description: "Comprehensive yearly maintenance keeping your borehole running perfectly for decades.",
-    href: "/annual-service",
     icon: <ClipboardCheck className="w-8 h-8" />,
     image: "/images/annual-service.jpg",
   },
@@ -37,7 +36,7 @@ const services: ServiceItem[] = [
   {
     title: "Emergency Repairs",
     description: "24/7 emergency response for pump failures, pressure loss, and system breakdowns.",
-    href: "/emergency-repairs",
+    href: "/pump-repair",
     icon: <AlertTriangle className="w-8 h-8" />,
     highlight: true,
     image: "/images/emergency-repair.jpg",
@@ -443,9 +442,6 @@ export default function BoreholeMaintencePage() {
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/water-testing" className="hover:text-accent transition-colors">
-                  Water Quality Testing
-                </Link>
               </h3>
               <p className="text-muted-foreground mb-4">
                 Comprehensive water analysis for safety and compliance. Bacterial and chemical testing with SANS 241
@@ -466,14 +462,14 @@ export default function BoreholeMaintencePage() {
                 Fix pressure fluctuations, bladder failures, and control system issues. Professional repair restores
                 consistent water pressure throughout your property.
               </p>
-              <Link href="/pressure-system-repair" className="text-accent font-semibold hover:underline">
+              <Link href="/pressure-system" className="text-accent font-semibold hover:underline">
                 Learn More →
               </Link>
             </Card>
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/borehole-inspection" className="hover:text-accent transition-colors">
+                <Link href="/pump-inspection" className="hover:text-accent transition-colors">
                   Pre-Purchase Inspections
                 </Link>
               </h3>
@@ -481,7 +477,7 @@ export default function BoreholeMaintencePage() {
                 Buying property with a borehole? Get professional inspection before purchase. We assess condition,
                 identify issues, and provide repair cost estimates.
               </p>
-              <Link href="/borehole-inspection" className="text-accent font-semibold hover:underline">
+              <Link href="/pump-inspection" className="text-accent font-semibold hover:underline">
                 Learn More →
               </Link>
             </Card>
