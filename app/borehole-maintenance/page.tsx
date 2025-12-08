@@ -458,7 +458,7 @@ export default function BoreholeMaintencePage() {
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/pressure-system" className="hover:text-accent transition-colors">
+                <Link href="/pressure-systems" className="hover:text-accent transition-colors">
                   Pressure System Repair
                 </Link>
               </h3>
@@ -466,7 +466,7 @@ export default function BoreholeMaintencePage() {
                 Fix pressure fluctuations, bladder failures, and control system issues. Professional repair restores
                 consistent water pressure throughout your property.
               </p>
-              <Link href="/pressure-system" className="text-accent font-semibold hover:underline">
+              <Link href="/pressure-systems" className="text-accent font-semibold hover:underline">
                 Learn More →
               </Link>
             </Card>
