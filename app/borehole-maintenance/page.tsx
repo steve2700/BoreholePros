@@ -43,7 +43,7 @@ const services: ServiceItem[] = [
   },
 ]
 
-export default function BoreholeMaintencePage() {
+export default function BoreholeMaintenancePage() {
   return (
     <>
       <Hero
@@ -442,6 +442,9 @@ export default function BoreholeMaintencePage() {
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
+                <Link href="/water-testing" className="hover:text-accent transition-colors">
+                  Water Testing Services
+                </Link>
               </h3>
               <p className="text-muted-foreground mb-4">
                 Comprehensive water analysis for safety and compliance. Bacterial and chemical testing with SANS 241
