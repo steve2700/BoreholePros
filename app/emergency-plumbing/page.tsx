@@ -32,7 +32,7 @@ const emergencyServices: ServiceItem[] = [
   {
     title: "Water Leaks",
     description: "Emergency water leak repairs to minimize water waste and damage.",
-    href: "#",
+    href: "/leak-detection",
   },
 ]
 
