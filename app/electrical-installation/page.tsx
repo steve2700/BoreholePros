@@ -23,7 +23,6 @@ const services: ServiceItem[] = [
   {
     title: "Pump Electrical Wiring",
     description: "Professional pump wiring with correctly sized cables, waterproof connections, and proper voltage drop calculations.",
-    href: "/pump-wiring",
     icon: <Cable className="w-8 h-8" />,
     image: "/images/pump-wiring.jpg",
   },
