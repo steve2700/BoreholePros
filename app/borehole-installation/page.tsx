@@ -499,17 +499,11 @@ export default function BoreholeInstallationPage() {
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/water-filtration" className="hover:text-accent transition-colors">
-                  Water Filtration Systems
-                </Link>
               </h3>
               <p className="text-muted-foreground mb-4">
                 Advanced filtration and UV sterilization for safe, clean water. Remove sediment, bacteria, and
                 contaminants from your borehole supply.
               </p>
-              <Link href="/water-filtration" className="text-accent font-semibold hover:underline">
-                Learn More →
-              </Link>
             </Card>
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
