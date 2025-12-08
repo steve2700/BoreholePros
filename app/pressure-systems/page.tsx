@@ -51,7 +51,7 @@ export default function PressureSystemsPage() {
         title="Professional Pressure System Installation for Boreholes"
         subtitle="Constant Pressure | Efficient Operation | Reliable Performance"
         description="Expert installation of pressure systems for borehole water supply. We install pressure tanks, VSD controllers, and constant pressure systems ensuring consistent water pressure throughout your property. Professional setup with quality components and comprehensive testing. Call 060 348 8268."
-        imageSrc="/images/pressure-systems.jpg"
+        imageSrc="/images/pressure-system.jpg"
         cta={{
           primary: { text: "Get Pressure System Quote", href: "/contact" },
           secondary: { text: "Call: 060 348 8268", href: "tel:0603488268" },
