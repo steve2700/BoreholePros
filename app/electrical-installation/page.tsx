@@ -51,7 +51,7 @@ export default function ElectricalInstallationPage() {
         title="Professional Borehole Electrical Installation Services"
         subtitle="Safe Wiring | SANS Compliant | Certified Electricians"
         description="Expert electrical installation for borehole pumps across Gauteng. Our certified electricians provide safe pump wiring, control box installation, earth leakage protection, and surge protection systems. All installations comply with SANS 10142-1 electrical safety standards. Professional setup ensuring reliable operation and maximum pump protection. Call 060 348 8268."
-        imageSrc="/images/electrical-installation.jpg"
+        imageSrc="/images/electrical-connection.jpg"
         cta={{
           primary: { text: "Get Electrical Quote", href: "/contact" },
           secondary: { text: "Call: 060 348 8268", href: "tel:0603488268" },
