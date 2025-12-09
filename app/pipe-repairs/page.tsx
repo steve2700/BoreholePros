@@ -186,7 +186,7 @@ export default function PipeRepairsPage() {
                           <Link href="/emergency-plumber" className="text-accent hover:underline block">
                             → 24/7 Emergency Plumber Services
                           </Link>
-                          <Link href="/blocked-drain-services" className="text-accent hover:underline block">
+                          <Link href="/blocked-drain-johannesburg" className="text-accent hover:underline block">
                             → Blocked Drain Cleaning Services
                           </Link>
                         </div>
@@ -261,7 +261,7 @@ export default function PipeRepairsPage() {
                           <Link href="/leak-detection" className="text-accent hover:underline block">
                             → Professional Leak Detection
                           </Link>
-                          <Link href="/drain-cleaning-general" className="text-accent hover:underline block">
+                          <Link href="/drain-cleaning" className="text-accent hover:underline block">
                             → Drain Cleaning Services
                           </Link>
                         </div>
