@@ -524,7 +524,7 @@ export default function PipeRepairsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/emergency-plumber" className="hover:text-accent transition-colors">
+                <Link href="/emergency-plumber-johannesburg" className="hover:text-accent transition-colors">
                   Emergency Plumbing Services
                 </Link>
               </h3>
@@ -532,14 +532,14 @@ export default function PipeRepairsPage() {
                 24/7 emergency plumber response for burst pipes, major leaks, and urgent plumbing failures across all
                 major cities.
               </p>
-              <Link href="/emergency-plumber" className="text-accent font-semibold hover:underline">
+              <Link href="/emergency-plumber-johannesburg" className="text-accent font-semibold hover:underline">
                 Learn More →
               </Link>
             </Card>
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-4">
-                <Link href="/blocked-drain-services" className="hover:text-accent transition-colors">
+                <Link href="/blocked-drain-johannesburg" className="hover:text-accent transition-colors">
                   Blocked Drain Cleaning
                 </Link>
               </h3>
@@ -547,7 +547,7 @@ export default function PipeRepairsPage() {
                 Professional drain cleaning services clearing blockages in sinks, toilets, and main sewer lines with
                 specialized equipment.
               </p>
-              <Link href="/blocked-drain-services" className="text-accent font-semibold hover:underline">
+              <Link href="/contact" className="text-accent font-semibold hover:underline">
                 Learn More →
               </Link>
             </Card>
