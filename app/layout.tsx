@@ -9,7 +9,9 @@ import "./globals.css"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
-// <CHANGE> Updated metadata for Borehole Pros SEO
+// ---------------------------------------------------------
+// SEO + FAVICON + SOCIAL METADATA
+// ---------------------------------------------------------
 export const metadata: Metadata = {
   title: "Borehole Drilling & Plumbing Services SA | Borehole Pros",
   description:
@@ -28,13 +30,16 @@ export const metadata: Metadata = {
   publisher: "Borehole Pros",
   applicationName: "Borehole Pros",
   metadataBase: new URL("https://boreholepros.co.za"),
+
+  // ---- Open Graph ----
   openGraph: {
     type: "website",
     locale: "en_ZA",
     url: "https://boreholepros.co.za",
     siteName: "Borehole Pros",
     title: "Borehole Drilling & Plumbing Services SA | Borehole Pros",
-    description: "Expert borehole drilling and plumbing across South Africa. Fast installation, maintenance & repairs.",
+    description:
+      "Expert borehole drilling and plumbing across South Africa. Fast installation, maintenance & repairs.",
     images: [
       {
         url: "/og-image.jpg",
@@ -44,11 +49,16 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  // ---- Twitter ----
   twitter: {
     card: "summary_large_image",
     title: "Borehole Drilling & Plumbing Services SA | Borehole Pros",
     description: "Expert borehole drilling and plumbing across South Africa.",
+    images: ["/og-image.jpg"],
   },
+
+  // ---- Robots ----
   robots: {
     index: true,
     follow: true,
@@ -57,29 +67,29 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  // ---- Canonical ----
   alternates: {
     canonical: "https://boreholepros.co.za",
   },
+
+  // ---- FAVICONS + ICONS ----
+  manifest: "/manifest.json",
   icons: {
     icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      { url: "/favicon.ico" },
+      { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
     ],
-    apple: "/apple-icon.png",
+    apple: "/apple-touch-icon.png",
   },
 }
 
-// <CHANGE> Added viewport configuration for mobile optimization
+// ---------------------------------------------------------
+// VIEWPORT (Mobile optimization)
+// ---------------------------------------------------------
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -91,6 +101,9 @@ export const viewport: Viewport = {
   ],
 }
 
+// ---------------------------------------------------------
+// ROOT LAYOUT
+// ---------------------------------------------------------
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -99,7 +112,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <CHANGE> Added JSON-LD schema for organization */}
+        {/* JSON-LD STRUCTURED DATA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -107,39 +120,19 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": ["PlumbingService", "LocalBusiness"],
               name: "Borehole Pros",
-              description: "Expert Borehole Drilling & Plumbing Services Across South Africa",
+              description:
+                "Expert Borehole Drilling & Plumbing Services Across South Africa",
               url: "https://boreholepros.co.za",
               telephone: "060-348-8268",
               priceRange: "ZAR",
-              areaServed: {
-                "@type": "Country",
-                name: "South Africa",
-              },
+              areaServed: { "@type": "Country", name: "South Africa" },
               availableService: [
-                {
-                  "@type": "Service",
-                  name: "Borehole Drilling",
-                },
-                {
-                  "@type": "Service",
-                  name: "Borehole Installation",
-                },
-                {
-                  "@type": "Service",
-                  name: "Emergency Plumbing",
-                },
-                {
-                  "@type": "Service",
-                  name: "Geyser Installation",
-                },
-                {
-                  "@type": "Service",
-                  name: "Leak Detection",
-                },
-                {
-                  "@type": "Service",
-                  name: "Drain Cleaning",
-                },
+                { "@type": "Service", name: "Borehole Drilling" },
+                { "@type": "Service", name: "Borehole Installation" },
+                { "@type": "Service", name: "Emergency Plumbing" },
+                { "@type": "Service", name: "Geyser Installation" },
+                { "@type": "Service", name: "Leak Detection" },
+                { "@type": "Service", name: "Drain Cleaning" },
               ],
               openingHours: "Mo-Su 00:00-23:59",
               sameAs: [],
@@ -153,7 +146,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`font-sans antialiased`}>
+
+      <body className="font-sans antialiased">
         <Header />
         {children}
         <Footer />
