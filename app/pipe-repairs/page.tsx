@@ -23,7 +23,7 @@ const services: ServiceItem[] = [
   {
     title: "Burst Pipe Repairs",
     description: "Emergency burst pipe repair with fast response. Stop water damage immediately.",
-    href: "/burst-pipe-repair",
+    href: "/contact",
     icon: <AlertCircle className="w-8 h-8" />,
     image: "/images/burst-pipe.jpg",
     highlight: true,
@@ -38,7 +38,7 @@ const services: ServiceItem[] = [
   {
     title: "Pipe Replacement",
     description: "Complete pipe replacement for corroded or damaged plumbing systems.",
-    href: "/pipe-replacement",
+    href: "/contact",
     icon: <Wrench className="w-8 h-8" />,
     image: "/images/pipe-replacement.jpg",
   },
@@ -205,10 +205,10 @@ export default function PipeRepairsPage() {
                           sensitive restoration.
                         </p>
                         <div className="space-y-1 text-xs">
-                          <Link href="/cape-town/pipe-repairs" className="text-accent hover:underline block">
+                          <Link href="/cape-town" className="text-accent hover:underline block">
                             → Cape Town Pipe Repair Services
                           </Link>
-                          <Link href="/cape-town/emergency-plumbing" className="text-accent hover:underline block">
+                          <Link href="/emergency-plumbing" className="text-accent hover:underline block">
                             → Emergency Plumbing Cape Town
                           </Link>
                           <Link href="/geyser-installation" className="text-accent hover:underline block">
@@ -230,10 +230,10 @@ export default function PipeRepairsPage() {
                           across diverse neighborhoods.
                         </p>
                         <div className="space-y-1 text-xs">
-                          <Link href="/pretoria/pipe-repairs" className="text-accent hover:underline block">
+                          <Link href="/pretoria" className="text-accent hover:underline block">
                             → Pretoria Pipe Repair Services
                           </Link>
-                          <Link href="/pretoria/drain-cleaning" className="text-accent hover:underline block">
+                          <Link href="/drain-cleaning" className="text-accent hover:underline block">
                             → Professional Drain Cleaning
                           </Link>
                           <Link href="/emergency-plumbing" className="text-accent hover:underline block">
@@ -255,10 +255,10 @@ export default function PipeRepairsPage() {
                           regions.
                         </p>
                         <div className="space-y-1 text-xs">
-                          <Link href="/durban/pipe-repairs" className="text-accent hover:underline block">
+                          <Link href="/durban" className="text-accent hover:underline block">
                             → Durban Pipe Repair Services
                           </Link>
-                          <Link href="/durban/leak-detection" className="text-accent hover:underline block">
+                          <Link href="/leak-detection" className="text-accent hover:underline block">
                             → Professional Leak Detection
                           </Link>
                           <Link href="/drain-cleaning-general" className="text-accent hover:underline block">
