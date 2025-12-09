@@ -10,6 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/emergency-borehole-repair-sandton/", priority: 0.96, changeFrequency: "weekly" as const },
     { url: "/plumber-johannesburg/", priority: 0.96, changeFrequency: "monthly" as const },
     { url: "/emergency-plumber-johannesburg/", priority: 0.95, changeFrequency: "monthly" as const },
+    { url: "/plumbing/", priority: 0.95, changeFrequency: "monthly" as const },
+    { url: "/pump-inspection/", priority: 0.95, changeFrequency: "monthly" as const },
+    { url: "/pump-repair/", priority: 0.95, changeFrequency: "monthly" as const },
+    { url: "/borehole-installation/", priority: 0.95, changeFrequency: "monthly" as const },
+    { url: "/borehole-maintenance/", priority: 0.95, changeFrequency: "monthly" as const },
   ]
 
   // Tier 2: High-traffic money pages
@@ -62,6 +67,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/geyser-installation/", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/drain-cleaning/", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/leak-detection/", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/pump-installation/", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/pressure-systems/", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/electrical-installation/", priority: 0.8, changeFrequency: "monthly" as const },
+    
   ]
 
   // Tier 7: Support pages
