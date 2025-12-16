@@ -294,7 +294,7 @@ export default function FourwaysPage() {
               <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
                 Comprehensive water quality testing ensuring safety and compliance. Professional lab analysis testing for bacteria, minerals, pH, and contaminants. Treatment solutions for any water quality issues identified.
               </p>
-              <Link href="/water-testing" className="text-accent hover:underline text-sm font-semibold inline-flex items-center gap-1">
+              <Link href="/contact" className="text-accent hover:underline text-sm font-semibold inline-flex items-center gap-1">
                 Testing information →
               </Link>
             </Card>
