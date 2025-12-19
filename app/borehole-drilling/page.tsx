@@ -168,280 +168,6 @@ export default function BoreholeDrillingPage() {
                     <span><strong>Versatile applications:</strong> Perfect for gardens, pools, irrigation, livestock, household use, and commercial operations.</span>
                   </li>
                 </ul>
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <div className="text-center mb-4">
-                <Droplet className="w-12 h-12 text-accent mx-auto mb-3" />
-                <h3 className="font-bold mb-2 text-xl">Deep Borehole</h3>
-                <p className="text-muted-foreground text-sm mb-4">100-150+ meters depth</p>
-              </div>
-              <div className="text-center mb-6">
-                <p className="text-3xl font-bold text-accent mb-2">ZAR 28,000-45,000+</p>
-              </div>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Rural areas, deep water table</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>High-volume commercial use</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Specialized drilling rigs</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>3-4 day installation</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-sm text-muted-foreground mb-4">
-              * Prices include drilling, pump, pressure tank, and basic installation. Additional costs may apply for water testing, treatment systems, and complex electrical work.
-            </p>
-            <Link 
-              href="/contact"
-              className="inline-flex items-center gap-2 text-accent font-semibold hover:underline"
-            >
-              Get Your Free Detailed Quote →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Areas */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container-max">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Borehole Drilling Across South Africa
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Professional services in all major cities and surrounding areas
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
-            {[
-              { name: "Johannesburg", href: "/plumber-johannesburg" },
-              { name: "Sandton", href: "/plumber-sandton" },
-              { name: "Midrand", href: "/plumber-midrand" },
-              { name: "Fourways", href: "/fourways" },
-              { name: "Cape Town", href: "/cape-town" },
-              { name: "Pretoria", href: "/plumber-pretoria" },
-              { name: "Centurion", href: "/centurion" },
-              { name: "Durban", href: "/durban" },
-              { name: "East Rand", href: "/east-rand" },
-              { name: "Randburg", href: "/randburg" },
-              { name: "Germiston", href: "/germiston" },
-              { name: "All Areas", href: "/contact" },
-            ].map((area) => (
-              <Link 
-                key={area.name}
-                href={area.href}
-                className="text-center p-4 bg-muted rounded-lg hover:shadow-md hover:bg-accent/5 transition-all"
-              >
-                <MapPin className="w-6 h-6 text-accent mx-auto mb-2" />
-                <p className="font-semibold text-sm">{area.name}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <TrustSignals />
-
-      <CTASection
-        title="Ready for Water Independence? Get Your Free Borehole Assessment"
-        description="Our experts will evaluate your property and provide a detailed quote with no obligation. Most assessments completed same-day. Contact us now to start your journey to water independence."
-        primaryCTA={{ text: "Call: 060 348 8268", href: "tel:0603488268" }}
-        secondaryCTA={{ text: "Request Free Assessment", href: "/contact" }}
-      />
-
-      {/* Enhanced Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "@id": "https://boreholepros.co.za/borehole-drilling",
-            name: "Borehole Drilling Services South Africa",
-            description: "Professional borehole drilling, installation and water testing services across South Africa. Licensed operators, modern equipment, 15+ years experience.",
-            url: "https://boreholepros.co.za/borehole-drilling",
-            provider: {
-              "@type": "LocalBusiness",
-              name: "Borehole Pros",
-              telephone: "+27603488268",
-              email: "info@boreholepros.co.za",
-              url: "https://boreholepros.co.za",
-              image: "https://boreholepros.co.za/images/borehole-drilling.jpg",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "450",
-              },
-            },
-            areaServed: [
-              {
-                "@type": "City",
-                name: "Johannesburg",
-              },
-              {
-                "@type": "City",
-                name: "Cape Town",
-              },
-              {
-                "@type": "City",
-                name: "Pretoria",
-              },
-              {
-                "@type": "City",
-                name: "Durban",
-              },
-              {
-                "@type": "Country",
-                name: "South Africa",
-              },
-            ],
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Borehole Drilling Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Shallow Borehole Drilling (15-50m)",
-                    description: "Professional drilling for shallow water table areas, ideal for gardens and irrigation",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "12000",
-                    maxPrice: "18000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Standard Borehole Drilling (50-100m)",
-                    description: "Most common borehole installation for residential and commercial properties",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "18000",
-                    maxPrice: "28000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Deep Borehole Drilling (100-150m+)",
-                    description: "Specialized deep drilling for rural areas and high-volume requirements",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "28000",
-                    maxPrice: "45000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-              ],
-            },
-            additionalType: [
-              "Borehole Installation",
-              "Water Well Drilling",
-              "Groundwater Development",
-            ],
-          }),
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "How much does borehole drilling cost in South Africa?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Borehole drilling costs in South Africa range from ZAR 12,000 to 45,000+ depending on depth and requirements. Shallow boreholes (15-50m) cost ZAR 12,000-18,000, standard boreholes (50-100m) cost ZAR 18,000-28,000, and deep boreholes (100m+) cost ZAR 28,000-45,000+. Prices include drilling, pump installation, and basic setup.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How long does it take to drill a borehole?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Borehole drilling typically takes 1-2 days for the actual drilling process. The complete project including site assessment, permits, drilling, pump installation, and testing usually takes 2-4 weeks from start to finish, depending on permit requirements in your area.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Do I need a permit to drill a borehole?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Permit requirements vary by municipality. Some areas require simple registration while others need full permits before drilling. We handle all permit applications and ensure compliance with local regulations. Contact us for specific requirements in your area.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How deep do you need to drill for water?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Water depth varies by region. In South Africa, water-bearing formations are typically found at 40-120 meters depth. Urban areas often have shallower water tables (40-70m) while rural areas may require deeper drilling (80-150m). We conduct site assessments to determine expected depths for your location.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How long does a borehole last?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Properly maintained boreholes can last 20-30+ years. The borehole itself is permanent, while pumps typically last 10-15 years with regular maintenance. Annual servicing ensures optimal performance and extends equipment life significantly.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://boreholepros.co.za",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Borehole Drilling",
-                item: "https://boreholepros.co.za/borehole-drilling",
-              },
-            ],
-          }),
-        }}
-      />
-    </>
-  )
-}
 
                 <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Professional Borehole Drilling Process</h3>
 
@@ -790,276 +516,278 @@ export default function BoreholeDrillingPage() {
                 </li>
               </ul>
             </Card>
-
             <Card className="p-8 hover:shadow-lg transition-shadow">
-              <div className="text-center mb-4">
-                <Droplet className="w-12 h-12 text-accent mx-auto mb-3" />
-                <h3 className="font-bold mb-2 text-xl">Deep Borehole</h3>
-                <p className="text-muted-foreground text-sm mb-4">100-150+ meters depth</p>
-              </div>
-              <div className="text-center mb-6">
-                <p className="text-3xl font-bold text-accent mb-2">ZAR 28,000-45,000+</p>
-              </div>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Rural areas, deep water table</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>High-volume commercial use</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Specialized drilling rigs</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>3-4 day installation</span>
-                </li>
-              </ul>
-            </Card>
+          <div className="text-center mb-4">
+            <Droplet className="w-12 h-12 text-accent mx-auto mb-3" />
+            <h3 className="font-bold mb-2 text-xl">Deep Borehole</h3>
+            <p className="text-muted-foreground text-sm mb-4">100-150+ meters depth</p>
           </div>
-
-          <div className="text-center mt-8">
-            <p className="text-sm text-muted-foreground mb-4">
-              * Prices include drilling, pump, pressure tank, and basic installation. Additional costs may apply for water testing, treatment systems, and complex electrical work.
-            </p>
-            <Link 
-              href="/contact"
-              className="inline-flex items-center gap-2 text-accent font-semibold hover:underline"
-            >
-              Get Your Free Detailed Quote →
-            </Link>
+          <div className="text-center mb-6">
+            <p className="text-3xl font-bold text-accent mb-2">ZAR 28,000-45,000+</p>
           </div>
-        </div>
-      </section>
+          <ul className="space-y-2 text-sm">
+            <li className="flex gap-2">
+              <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+              <span>Rural areas, deep water table</span>
+            </li>
+            <li className="flex gap-2">
+              <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+              <span>High-volume commercial use</span>
+            </li>
+            <li className="flex gap-2">
+              <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+              <span>Specialized drilling rigs</span>
+            </li>
+            <li className="flex gap-2">
+              <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+              <span>3-4 day installation</span>
+            </li>
+          </ul>
+        </Card>
+      </div>
 
-      {/* Service Areas */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container-max">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Borehole Drilling Across South Africa
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Professional services in all major cities and surrounding areas
-          </p>
+      <div className="text-center mt-8">
+        <p className="text-sm text-muted-foreground mb-4">
+          * Prices include drilling, pump, pressure tank, and basic installation. Additional costs may apply for water testing, treatment systems, and complex electrical work.
+        </p>
+        <Link 
+          href="/contact"
+          className="inline-flex items-center gap-2 text-accent font-semibold hover:underline"
+        >
+          Get Your Free Detailed Quote →
+        </Link>
+      </div>
+    </div>
+  </section>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
-            {[
-              { name: "Johannesburg", href: "/plumber-johannesburg" },
-              { name: "Sandton", href: "/plumber-sandton" },
-              { name: "Midrand", href: "/plumber-midrand" },
-              { name: "Fourways", href: "/fourways" },
-              { name: "Cape Town", href: "/cape-town" },
-              { name: "Pretoria", href: "/plumber-pretoria" },
-              { name: "Centurion", href: "/centurion" },
-              { name: "Durban", href: "/durban" },
-              { name: "East Rand", href: "/east-rand" },
-              { name: "Randburg", href: "/randburg" },
-              { name: "Germiston", href: "/germiston" },
-              { name: "All Areas", href: "/contact" },
-            ].map((area) => (
-              <Link 
-                key={area.name}
-                href={area.href}
-                className="text-center p-4 bg-muted rounded-lg hover:shadow-md hover:bg-accent/5 transition-all"
-              >
-                <MapPin className="w-6 h-6 text-accent mx-auto mb-2" />
-                <p className="font-semibold text-sm">{area.name}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+  {/* Service Areas */}
+  <section className="py-16 md:py-24 bg-background">
+    <div className="container-max">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        Borehole Drilling Across South Africa
+      </h2>
+      <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+        Professional services in all major cities and surrounding areas
+      </p>
 
-      <TrustSignals />
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+        {[
+          { name: "Johannesburg", href: "/plumber-johannesburg" },
+          { name: "Sandton", href: "/plumber-sandton" },
+          { name: "Midrand", href: "/plumber-midrand" },
+          { name: "Fourways", href: "/fourways" },
+          { name: "Cape Town", href: "/cape-town" },
+          { name: "Pretoria", href: "/plumber-pretoria" },
+          { name: "Centurion", href: "/centurion" },
+          { name: "Durban", href: "/durban" },
+          { name: "East Rand", href: "/east-rand" },
+          { name: "Randburg", href: "/randburg" },
+          { name: "Germiston", href: "/germiston" },
+          { name: "All Areas", href: "/contact" },
+        ].map((area) => (
+          <Link 
+            key={area.name}
+            href={area.href}
+            className="text-center p-4 bg-muted rounded-lg hover:shadow-md hover:bg-accent/5 transition-all"
+          >
+            <MapPin className="w-6 h-6 text-accent mx-auto mb-2" />
+            <p className="font-semibold text-sm">{area.name}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  </section>
 
-      <CTASection
-        title="Ready for Water Independence? Get Your Free Borehole Assessment"
-        description="Our experts will evaluate your property and provide a detailed quote with no obligation. Most assessments completed same-day. Contact us now to start your journey to water independence."
-        primaryCTA={{ text: "Call: 060 348 8268", href: "tel:0603488268" }}
-        secondaryCTA={{ text: "Request Free Assessment", href: "/contact" }}
-      />
+  <TrustSignals />
 
-      {/* Enhanced Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "@id": "https://boreholepros.co.za/borehole-drilling",
-            name: "Borehole Drilling Services South Africa",
-            description: "Professional borehole drilling, installation and water testing services across South Africa. Licensed operators, modern equipment, 15+ years experience.",
-            url: "https://boreholepros.co.za/borehole-drilling",
-            provider: {
-              "@type": "LocalBusiness",
-              name: "Borehole Pros",
-              telephone: "+27603488268",
-              email: "info@boreholepros.co.za",
-              url: "https://boreholepros.co.za",
-              image: "https://boreholepros.co.za/images/borehole-drilling.jpg",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "450",
+  <CTASection
+    title="Ready for Water Independence? Get Your Free Borehole Assessment"
+    description="Our experts will evaluate your property and provide a detailed quote with no obligation. Most assessments completed same-day. Contact us now to start your journey to water independence."
+    primaryCTA={{ text: "Call: 060 348 8268", href: "tel:0603488268" }}
+    secondaryCTA={{ text: "Request Free Assessment", href: "/contact" }}
+  />
+
+  {/* Enhanced Schema Markup */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://boreholepros.co.za/borehole-drilling",
+        name: "Borehole Drilling Services South Africa",
+        description: "Professional borehole drilling, installation and water testing services across South Africa. Licensed operators, modern equipment, 15+ years experience.",
+        url: "https://boreholepros.co.za/borehole-drilling",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "Borehole Pros",
+          telephone: "+27603488268",
+          email: "info@boreholepros.co.za",
+          url: "https://boreholepros.co.za",
+          image: "https://boreholepros.co.za/images/borehole-drilling.jpg",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "450",
+          },
+        },
+        areaServed: [
+          {
+            "@type": "City",
+            name: "Johannesburg",
+          },
+          {
+            "@type": "City",
+            name: "Cape Town",
+          },
+          {
+            "@type": "City",
+            name: "Pretoria",
+          },
+          {
+            "@type": "City",
+            name: "Durban",
+          },
+          {
+            "@type": "Country",
+            name: "South Africa",
+          },
+        ],
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Borehole Drilling Services",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Shallow Borehole Drilling (15-50m)",
+                description: "Professional drilling for shallow water table areas, ideal for gardens and irrigation",
+              },
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                minPrice: "12000",
+                maxPrice: "18000",
+                priceCurrency: "ZAR",
               },
             },
-            areaServed: [
-              {
-                "@type": "City",
-                name: "Johannesburg",
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Standard Borehole Drilling (50-100m)",
+                description: "Most common borehole installation for residential and commercial properties",
               },
-              {
-                "@type": "City",
-                name: "Cape Town",
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                minPrice: "18000",
+                maxPrice: "28000",
+                priceCurrency: "ZAR",
               },
-              {
-                "@type": "City",
-                name: "Pretoria",
-              },
-              {
-                "@type": "City",
-                name: "Durban",
-              },
-              {
-                "@type": "Country",
-                name: "South Africa",
-              },
-            ],
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Borehole Drilling Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Shallow Borehole Drilling (15-50m)",
-                    description: "Professional drilling for shallow water table areas, ideal for gardens and irrigation",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "12000",
-                    maxPrice: "18000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Standard Borehole Drilling (50-100m)",
-                    description: "Most common borehole installation for residential and commercial properties",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "18000",
-                    maxPrice: "28000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Deep Borehole Drilling (100-150m+)",
-                    description: "Specialized deep drilling for rural areas and high-volume requirements",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "28000",
-                    maxPrice: "45000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-              ],
             },
-            additionalType: [
-              "Borehole Installation",
-              "Water Well Drilling",
-              "Groundwater Development",
-            ],
-          }),
-        }}
-      />
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Deep Borehole Drilling (100-150m+)",
+                description: "Specialized deep drilling for rural areas and high-volume requirements",
+              },
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                minPrice: "28000",
+                maxPrice: "45000",
+                priceCurrency: "ZAR",
+              },
+            },
+          ],
+        },
+        additionalType: [
+          "Borehole Installation",
+          "Water Well Drilling",
+          "Groundwater Development",
+        ],
+      }),
+    }}
+  />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "How much does borehole drilling cost in South Africa?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Borehole drilling costs in South Africa range from ZAR 12,000 to 45,000+ depending on depth and requirements. Shallow boreholes (15-50m) cost ZAR 12,000-18,000, standard boreholes (50-100m) cost ZAR 18,000-28,000, and deep boreholes (100m+) cost ZAR 28,000-45,000+. Prices include drilling, pump installation, and basic setup.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How long does it take to drill a borehole?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Borehole drilling typically takes 1-2 days for the actual drilling process. The complete project including site assessment, permits, drilling, pump installation, and testing usually takes 2-4 weeks from start to finish, depending on permit requirements in your area.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Do I need a permit to drill a borehole?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Permit requirements vary by municipality. Some areas require simple registration while others need full permits before drilling. We handle all permit applications and ensure compliance with local regulations. Contact us for specific requirements in your area.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How deep do you need to drill for water?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Water depth varies by region. In South Africa, water-bearing formations are typically found at 40-120 meters depth. Urban areas often have shallower water tables (40-70m) while rural areas may require deeper drilling (80-150m). We conduct site assessments to determine expected depths for your location.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How long does a borehole last?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Properly maintained boreholes can last 20-30+ years. The borehole itself is permanent, while pumps typically last 10-15 years with regular maintenance. Annual servicing ensures optimal performance and extends equipment life significantly.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "How much does borehole drilling cost in South Africa?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Borehole drilling costs in South Africa range from ZAR 12,000 to 45,000+ depending on depth and requirements. Shallow boreholes (15-50m) cost ZAR 12,000-18,000, standard boreholes (50-100m) cost ZAR 18,000-28,000, and deep boreholes (100m+) cost ZAR 28,000-45,000+. Prices include drilling, pump installation, and basic setup.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long does it take to drill a borehole?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Borehole drilling typically takes 1-2 days for the actual drilling process. The complete project including site assessment, permits, drilling, pump installation, and testing usually takes 2-4 weeks from start to finish, depending on permit requirements in your area.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do I need a permit to drill a borehole?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Permit requirements vary by municipality. Some areas require simple registration while others need full permits before drilling. We handle all permit applications and ensure compliance with local regulations. Contact us for specific requirements in your area.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How deep do you need to drill for water?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Water depth varies by region. In South Africa, water-bearing formations are typically found at 40-120 meters depth. Urban areas often have shallower water tables (40-70m) while rural areas may require deeper drilling (80-150m). We conduct site assessments to determine expected depths for your location.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long does a borehole last?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Properly maintained boreholes can last 20-30+ years. The borehole itself is permanent, while pumps typically last 10-15 years with regular maintenance. Annual servicing ensures optimal performance and extends equipment life significantly.",
+            },
+          },
+        ],
+      }),
+    }}
+  />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://boreholepros.co.za",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Borehole Drilling",
-                item: "https://boreholepros.co.za/borehole-drilling",
-              },
-            ],
-          }),
-        }}
-      />
-    </>
-  )
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://boreholepros.co.za",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Borehole Drilling",
+            item: "https://boreholepros.co.za/borehole-drilling",
+          },
+        ],
+      }),
+    }}
+  />
+</>
+)
 }
+
+  
+    
