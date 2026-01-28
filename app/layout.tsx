@@ -111,41 +111,58 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* JSON-LD STRUCTURED DATA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": ["PlumbingService", "LocalBusiness"],
-              name: "Borehole Pros",
-              description:
-                "Expert Borehole Drilling & Plumbing Services Across South Africa",
-              url: "https://boreholepros.co.za",
-              telephone: "060-348-8268",
-              priceRange: "ZAR",
-              areaServed: { "@type": "Country", name: "South Africa" },
-              availableService: [
-                { "@type": "Service", name: "Borehole Drilling" },
-                { "@type": "Service", name: "Borehole Installation" },
-                { "@type": "Service", name: "Emergency Plumbing" },
-                { "@type": "Service", name: "Geyser Installation" },
-                { "@type": "Service", name: "Leak Detection" },
-                { "@type": "Service", name: "Drain Cleaning" },
-              ],
-              openingHours: "Mo-Su 00:00-23:59",
-              sameAs: [],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "Customer Service",
-                telephone: "060-348-8268",
-                areaServed: "ZA",
-              },
-            }),
-          }}
-        />
-      </head>
+    <head>
+    {/* Google Ads Tag */}
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17888460394"
+    />
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17888460394');
+        `,
+      }}
+    />
+
+    {/* JSON-LD STRUCTURED DATA */}
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["PlumbingService", "LocalBusiness"],
+          name: "Borehole Pros",
+          description:
+            "Expert Borehole Drilling & Plumbing Services Across South Africa",
+          url: "https://boreholepros.co.za",
+          telephone: "060-348-8268",
+          priceRange: "ZAR",
+          areaServed: { "@type": "Country", name: "South Africa" },
+          availableService: [
+            { "@type": "Service", name: "Borehole Drilling" },
+            { "@type": "Service", name: "Borehole Installation" },
+            { "@type": "Service", name: "Emergency Plumbing" },
+            { "@type": "Service", name: "Geyser Installation" },
+            { "@type": "Service", name: "Leak Detection" },
+            { "@type": "Service", name: "Drain Cleaning" },
+          ],
+          openingHours: "Mo-Su 00:00-23:59",
+          sameAs: [],
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "Customer Service",
+            telephone: "060-348-8268",
+            areaServed: "ZA",
+          },
+        }),
+      }}
+    />
+  </head>
+
 
       <body className="font-sans antialiased">
         <Header />
