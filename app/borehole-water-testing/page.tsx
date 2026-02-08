@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Card } from "@/components/ui/card"
-import { CheckCircle2, Droplets, AlertTriangle, Phone, Flask, Shield } from "lucide-react"
+import { CheckCircle2, Droplets, AlertTriangle, Phone, FlaskConical, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Borehole Water Testing 2026 South Africa | Professional Water Quality Analysis",
@@ -187,7 +187,7 @@ export default function BoreholeWaterTestingPage() {
                     Sodium content
                   </li>
                   <li className="flex gap-2">
-                    <Flask className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                    <FlaskConical className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
                     <span className="font-semibold">Detailed treatment plan included</span>
                   </li>
                 </ul>
@@ -235,7 +235,7 @@ export default function BoreholeWaterTestingPage() {
                     VOCs (Volatile Organic Compounds)
                   </li>
                   <li className="flex gap-2">
-                    <Flask className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                    <FlaskConical className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
                     <span className="font-semibold">Custom filtration system design</span>
                   </li>
                 </ul>
@@ -248,7 +248,7 @@ export default function BoreholeWaterTestingPage() {
           {/* Add-on Tests */}
           <div className="bg-gradient-to-r from-accent/10 to-primary/10 p-8 rounded-lg border-2 border-accent/50">
             <div className="flex items-start gap-4">
-              <Flask className="w-12 h-12 text-accent flex-shrink-0" />
+              <FlaskConical className="w-12 h-12 text-accent flex-shrink-0" />
               <div>
                 <h3 className="font-bold text-xl mb-3">🧪 Additional Specialized Tests Available</h3>
                 <p className="text-muted-foreground mb-4">
@@ -670,7 +670,7 @@ export default function BoreholeWaterTestingPage() {
       <section className="py-16 md:py-24 bg-gradient-to-b from-accent/10 to-transparent">
         <div className="container-max">
           <div className="max-w-3xl mx-auto text-center">
-            <Flask className="w-16 h-16 text-accent mx-auto mb-6" />
+            <FlaskConical className="w-16 h-16 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Protect Your Family's Health Today
             </h2>
