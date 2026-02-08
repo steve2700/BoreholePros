@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/pump-repair/", priority: 0.95, changeFrequency: "monthly" as const },
     { url: "/borehole-installation/", priority: 0.95, changeFrequency: "monthly" as const },
     { url: "/borehole-maintenance/", priority: 0.95, changeFrequency: "monthly" as const },
+    { url: "/borehole-near-me/", priority: 0.95, changeFrequency: "monthly" as const },
   ]
 
   // Tier 2: High-traffic money pages
