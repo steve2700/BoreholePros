@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/borehole-maintenance/", priority: 0.95, changeFrequency: "monthly" as const },
     { url: "/borehole-near-me/", priority: 0.95, changeFrequency: "monthly" as const },
     { url: "/borehole-water-testing/", priority: 0.95, changeFrequency: "monthly" as const },
+     { url: "/solar-borehole-pumps/", priority: 0.95, changeFrequency: "monthly" as const },
   ]
 
   // Tier 2: High-traffic money pages
