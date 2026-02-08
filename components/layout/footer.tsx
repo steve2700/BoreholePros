@@ -94,6 +94,22 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/borehole-near-me" className="hover:opacity-75 transition-opacity hover:underline">
+                  Borehole Near Me 
+                </Link>
+              </li>
+              <li>
+                <Link href="/solar-borehole-pumps" className="hover:opacity-75 transition-opacity hover:underline">
+                  Solar Borehole Pumps
+                </Link>
+              </li
+              <li>
+                <Link href="/borehole-water-testing" className="hover:opacity-75 transition-opacity hover:underline">
+                  Borehole Water Testing
+                </Link>
+              </li>
+      
+              <li>
                 <Link href="/emergency-plumbing" className="hover:opacity-75 transition-opacity hover:underline">
                   Emergency Plumbing
                 </Link>
