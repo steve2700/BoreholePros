@@ -102,13 +102,12 @@ export function Footer() {
                 <Link href="/solar-borehole-pumps" className="hover:opacity-75 transition-opacity hover:underline">
                   Solar Borehole Pumps
                 </Link>
-              </li
+              </li>
               <li>
                 <Link href="/borehole-water-testing" className="hover:opacity-75 transition-opacity hover:underline">
                   Borehole Water Testing
                 </Link>
               </li>
-      
               <li>
                 <Link href="/emergency-plumbing" className="hover:opacity-75 transition-opacity hover:underline">
                   Emergency Plumbing
