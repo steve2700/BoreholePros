@@ -1,31 +1,31 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { WhatsAppButton } from "@/components/WhatsAppButton"
+import WhatsAppButton from "@/components/WhatsAppButton"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
-// ---------------------------------------------------------
-// SEO + FAVICON + SOCIAL METADATA
-// ---------------------------------------------------------
 export const metadata: Metadata = {
-  title: "Borehole Drilling & Plumbing Services SA | Borehole Pros",
+  title: "Borehole Drilling Gauteng | Licensed Specialists | Borehole Pros",
   description:
-    "Expert borehole drilling and plumbing across South Africa. Fast installation, maintenance & repairs. Call 060 348 8268 for a free quote today!",
+    "Expert borehole drilling and installation across Gauteng. Serving Johannesburg, Pretoria, Sandton, Midrand & Centurion. From R18,000. Free site assessment. Call 060 348 8268!",
   generator: "v0.app",
   keywords: [
-    "borehole drilling",
-    "plumbing services",
-    "south africa",
-    "geyser installation",
-    "leak detection",
-    "emergency plumber",
+    "borehole drilling gauteng",
+    "borehole drilling johannesburg",
+    "borehole installation gauteng",
+    "borehole drilling pretoria",
+    "borehole drilling sandton",
+    "borehole drilling midrand",
+    "borehole drilling centurion",
+    "borehole drilling near me",
+    "borehole pump installation gauteng",
+    "borehole repair johannesburg",
   ],
   authors: [{ name: "Borehole Pros" }],
   creator: "Borehole Pros",
@@ -33,34 +33,31 @@ export const metadata: Metadata = {
   applicationName: "Borehole Pros",
   metadataBase: new URL("https://boreholepros.co.za"),
 
-  // ---- Open Graph ----
   openGraph: {
     type: "website",
     locale: "en_ZA",
     url: "https://boreholepros.co.za",
     siteName: "Borehole Pros",
-    title: "Borehole Drilling & Plumbing Services SA | Borehole Pros",
+    title: "Borehole Drilling Gauteng | Licensed Specialists | Borehole Pros",
     description:
-      "Expert borehole drilling and plumbing across South Africa. Fast installation, maintenance & repairs.",
+      "Expert borehole drilling and installation across Gauteng. From R18,000. Free site assessment. Call 060 348 8268.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Borehole Pros - Expert Services",
+        alt: "Borehole Pros - Expert Borehole Drilling Gauteng",
       },
     ],
   },
 
-  // ---- Twitter ----
   twitter: {
     card: "summary_large_image",
-    title: "Borehole Drilling & Plumbing Services SA | Borehole Pros",
-    description: "Expert borehole drilling and plumbing across South Africa.",
+    title: "Borehole Drilling Gauteng | Borehole Pros",
+    description: "Expert borehole drilling across Gauteng. From R18,000. Free site assessment. Call 060 348 8268.",
     images: ["/og-image.jpg"],
   },
 
-  // ---- Robots ----
   robots: {
     index: true,
     follow: true,
@@ -70,12 +67,10 @@ export const metadata: Metadata = {
     },
   },
 
-  // ---- Canonical ----
   alternates: {
     canonical: "https://boreholepros.co.za",
   },
 
-  // ---- FAVICONS + ICONS ----
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -89,9 +84,6 @@ export const metadata: Metadata = {
   },
 }
 
-// ---------------------------------------------------------
-// VIEWPORT (Mobile optimization)
-// ---------------------------------------------------------
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -103,9 +95,6 @@ export const viewport: Viewport = {
   ],
 }
 
-// ---------------------------------------------------------
-// ROOT LAYOUT
-// ---------------------------------------------------------
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -122,43 +111,67 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-17888460394');
-        `,
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17888460394');
+            `,
           }}
         />
 
-        {/* JSON-LD STRUCTURED DATA */}
+        {/* Google Ads Phone Call Conversion Tracking */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('config', 'AW-17888460394/CONVERSION_LABEL', {
+                'phone_conversion_number': '060 348 8268'
+              });
+            `,
+          }}
+        />
+
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["PlumbingService", "LocalBusiness"],
+              "@type": "LocalBusiness",
               name: "Borehole Pros",
-              description:
-                "Expert Borehole Drilling & Plumbing Services Across South Africa",
+              description: "Expert Borehole Drilling & Installation Services Across Gauteng",
               url: "https://boreholepros.co.za",
-              telephone: "060-348-8268",
+              telephone: "+27603488268",
               priceRange: "ZAR",
-              areaServed: { "@type": "Country", name: "South Africa" },
+              areaServed: [
+                { "@type": "City", name: "Johannesburg" },
+                { "@type": "City", name: "Pretoria" },
+                { "@type": "City", name: "Sandton" },
+                { "@type": "City", name: "Midrand" },
+                { "@type": "City", name: "Centurion" },
+                { "@type": "City", name: "Kempton Park" },
+                { "@type": "City", name: "Roodepoort" },
+                { "@type": "AdministrativeArea", name: "Gauteng" },
+              ],
               availableService: [
                 { "@type": "Service", name: "Borehole Drilling" },
                 { "@type": "Service", name: "Borehole Installation" },
-                { "@type": "Service", name: "Emergency Plumbing" },
-                { "@type": "Service", name: "Geyser Installation" },
-                { "@type": "Service", name: "Leak Detection" },
-                { "@type": "Service", name: "Drain Cleaning" },
+                { "@type": "Service", name: "Borehole Maintenance" },
+                { "@type": "Service", name: "Borehole Pump Repair" },
+                { "@type": "Service", name: "Solar Borehole Pumps" },
+                { "@type": "Service", name: "Borehole Water Testing" },
               ],
-              openingHours: "Mo-Su 00:00-23:59",
-              sameAs: [],
+              openingHours: "Mo-Su 06:00-20:00",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "1250",
+              },
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "Customer Service",
-                telephone: "060-348-8268",
+                telephone: "+27603488268",
                 areaServed: "ZA",
+                availableLanguage: ["English", "Afrikaans"],
               },
             }),
           }}
@@ -169,10 +182,10 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        
+
         {/* WhatsApp Floating Button - Shows on ALL pages */}
         <WhatsAppButton />
-        
+
         <Analytics />
       </body>
     </html>
