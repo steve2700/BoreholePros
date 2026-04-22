@@ -21,7 +21,7 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Borehole Drilling Gauteng | Expert Installation from R18,000 | Borehole Pros",
+  title: "Borehole Drilling Gauteng | Expert Installation | Borehole Pros",
   description:
     "★★★★★ Professional borehole drilling across Gauteng. 15+ years experience, 5000+ boreholes drilled. Complete installation, water testing, compliance certification. Serving Johannesburg, Pretoria, Sandton, Midrand, Centurion & all Gauteng suburbs. Licensed & insured. Free site assessment. Call 060 348 8268.",
   keywords: [
@@ -36,13 +36,12 @@ export const metadata: Metadata = {
     "borehole drilling krugersdorp",
     "borehole drilling edenvale",
     "borehole installation gauteng",
-    "borehole drilling cost gauteng",
     "borehole drilling near me gauteng",
     "borehole drilling east rand",
     "professional borehole drilling gauteng",
   ],
   openGraph: {
-    title: "Borehole Drilling Gauteng | From R18,000 | Borehole Pros",
+    title: "Borehole Drilling Gauteng | Borehole Pros",
     description: "5000+ boreholes drilled across Gauteng. 15+ years experience. Licensed professionals. Free site assessments. Call 060 348 8268",
     url: "https://boreholepros.co.za/borehole-drilling",
     siteName: "Borehole Pros",
@@ -91,7 +90,7 @@ export default function BoreholeDrillingPage() {
       <Hero
         title="Professional Borehole Drilling Services Across Gauteng"
         subtitle="★★★★★ Gauteng's #1 Borehole Specialists | 5,000+ Boreholes Drilled | 15+ Years Experience"
-        description="Complete borehole drilling services from free site assessment through installation, water testing and certification. Licensed professionals using modern equipment. Serving Johannesburg, Pretoria, Sandton, Midrand, Centurion, Kempton Park, Roodepoort and all Gauteng suburbs. From R18,000. Call 060 348 8268 now."
+        description="Complete borehole drilling services from free site assessment through installation, water testing and certification. Licensed professionals using modern equipment. Serving Johannesburg, Pretoria, Sandton, Midrand, Centurion, Kempton Park, Roodepoort and all Gauteng suburbs. Call 060 348 8268 for a free quote."
         imageSrc="/images/borehole-drilling.jpg"
         cta={{
           primary: { text: "Get Free Site Assessment", href: "/contact" },
@@ -200,24 +199,6 @@ export default function BoreholeDrillingPage() {
                   <strong>6. System Commissioning & Training:</strong> We test everything, demonstrate operation, provide maintenance guidance, and hand over all documentation — warranties, compliance certificates, and operation manuals.
                 </p>
 
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Borehole Drilling Costs in Gauteng</h3>
-
-                <p className="leading-relaxed">
-                  <strong>Shallow boreholes (15–50 meters)</strong> typically cost ZAR 12,000–18,000. Less common in Gauteng but possible in areas with high water tables near rivers and dams. Suitable for garden irrigation and non-potable uses.
-                </p>
-
-                <p className="leading-relaxed">
-                  <strong>Standard boreholes (50–100 meters)</strong> range from ZAR 18,000–28,000. This is the most common depth across Gauteng, suitable for most residential and small commercial properties. Includes drilling, pump installation, pressure system, and certification.
-                </p>
-
-                <p className="leading-relaxed">
-                  <strong>Deep boreholes (100–150+ meters)</strong> cost ZAR 28,000–45,000+. Required in parts of Pretoria with dolomitic geology and certain East Rand areas with deep water tables. Requires specialized drilling equipment and more powerful pumps.
-                </p>
-
-                <p className="leading-relaxed">
-                  Additional costs include water quality testing (ZAR 1,200–1,800), treatment systems if required (ZAR 3,000–8,000), and compliance certificates (ZAR 500–1,200). We provide fully transparent quotes after site assessment with zero hidden charges. <Link href="/borehole-drilling-cost" className="text-accent hover:underline font-semibold">View our full cost guide here.</Link>
-                </p>
-
                 <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Borehole Drilling Across All Gauteng Suburbs</h3>
 
                 <p className="leading-relaxed">
@@ -303,7 +284,7 @@ export default function BoreholeDrillingPage() {
                   </li>
                   <li className="flex gap-3 items-start">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span><strong>Transparent fixed pricing:</strong> Detailed quotes with zero hidden costs. You know the full amount before we drill a single meter.</span>
+                    <span><strong>Transparent fixed pricing:</strong> Detailed quotes after site assessment with zero hidden costs. You know the full amount before we drill a single meter.</span>
                   </li>
                   <li className="flex gap-3 items-start">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -317,35 +298,15 @@ export default function BoreholeDrillingPage() {
               </div>
             </div>
 
-            {/* Sticky Pricing Sidebar */}
+            {/* Sticky Contact Sidebar */}
             <div className="space-y-6">
               <Card className="p-6 bg-accent/5 border-accent sticky top-24">
-                <h3 className="font-bold mb-4 text-lg">Gauteng Borehole Pricing</h3>
-                <div className="space-y-4 text-sm">
-                  <div className="pb-3 border-b">
-                    <p className="font-semibold text-accent">Shallow (15–50m)</p>
-                    <p className="text-muted-foreground font-medium">ZAR 12,000 – 18,000</p>
-                    <p className="text-xs text-muted-foreground mt-1">High water table areas, irrigation use</p>
-                  </div>
-                  <div className="pb-3 border-b">
-                    <p className="font-semibold text-accent">Standard (50–100m) ★ Most Common</p>
-                    <p className="text-muted-foreground font-medium">ZAR 18,000 – 28,000</p>
-                    <p className="text-xs text-muted-foreground mt-1">Most Gauteng residential & commercial</p>
-                  </div>
-                  <div className="pb-3 border-b">
-                    <p className="font-semibold text-accent">Deep (100–150m+)</p>
-                    <p className="text-muted-foreground font-medium">ZAR 28,000 – 45,000+</p>
-                    <p className="text-xs text-muted-foreground mt-1">Dolomitic areas, high volume commercial</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-accent">Site Assessment</p>
-                    <p className="text-muted-foreground font-medium">FREE</p>
-                    <p className="text-xs text-muted-foreground mt-1">No obligation, same-day available</p>
-                  </div>
-                </div>
+                <h3 className="font-bold mb-4 text-lg">Get a Free Quote Today</h3>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Every borehole project is unique. Contact us for a free site assessment and accurate quote tailored to your property and requirements.
+                </p>
 
-                <div className="mt-6 pt-6 border-t space-y-3">
-                  <h4 className="font-bold text-sm">Get Started Today</h4>
+                <div className="space-y-3">
                   <a
                     href="tel:0603488268"
                     className="flex items-center justify-center gap-2 w-full bg-accent text-accent-foreground font-bold py-3 rounded-lg hover:bg-accent/90 transition-colors"
@@ -474,86 +435,8 @@ export default function BoreholeDrillingPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-16 md:py-24 bg-muted">
-        <div className="container-max">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Borehole Drilling Costs in Gauteng
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Transparent pricing based on depth and system requirements. All prices include drilling, pump, pressure system and installation.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <div className="text-center mb-4">
-                <Droplet className="w-12 h-12 text-accent mx-auto mb-3" />
-                <h3 className="font-bold mb-2 text-xl">Shallow Borehole</h3>
-                <p className="text-muted-foreground text-sm mb-4">15–50 meters depth</p>
-              </div>
-              <div className="text-center mb-6">
-                <p className="text-3xl font-bold text-accent mb-2">ZAR 12,000–18,000</p>
-              </div>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>High water table areas</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>Garden irrigation & pools</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>Basic pump system included</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>1–2 day installation</span></li>
-              </ul>
-            </Card>
-
-            <Card className="p-8 border-2 border-accent hover:shadow-xl transition-shadow relative">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <span className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-xs font-bold">
-                  MOST COMMON IN GAUTENG
-                </span>
-              </div>
-              <div className="text-center mb-4">
-                <Droplet className="w-12 h-12 text-accent mx-auto mb-3" />
-                <h3 className="font-bold mb-2 text-xl">Standard Borehole</h3>
-                <p className="text-muted-foreground text-sm mb-4">50–100 meters depth</p>
-              </div>
-              <div className="text-center mb-6">
-                <p className="text-3xl font-bold text-accent mb-2">ZAR 18,000–28,000</p>
-              </div>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>Most Gauteng residential use</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>Full household water supply</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>Quality submersible pump</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>2–3 day full installation</span></li>
-              </ul>
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <div className="text-center mb-4">
-                <Droplet className="w-12 h-12 text-accent mx-auto mb-3" />
-                <h3 className="font-bold mb-2 text-xl">Deep Borehole</h3>
-                <p className="text-muted-foreground text-sm mb-4">100–150+ meters depth</p>
-              </div>
-              <div className="text-center mb-6">
-                <p className="text-3xl font-bold text-accent mb-2">ZAR 28,000–45,000+</p>
-              </div>
-              <ul className="space-y-2 text-sm">
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>Dolomitic Pretoria areas</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>High-volume commercial use</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>Specialized drilling rigs</span></li>
-                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /><span>3–4 day installation</span></li>
-              </ul>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-sm text-muted-foreground mb-4">
-              * Prices include drilling, pump, pressure tank, and installation. Water testing, treatment systems and complex electrical work quoted separately.
-            </p>
-            <Link href="/borehole-drilling-cost" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
-              View Full Borehole Cost Guide for Gauteng →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Gauteng Service Areas */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-muted">
         <div className="container-max">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             Borehole Drilling Across All Gauteng Suburbs
@@ -591,7 +474,7 @@ export default function BoreholeDrillingPage() {
       </section>
 
       {/* Reviews */}
-      <section className="py-16 md:py-24 bg-muted">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container-max">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">What Gauteng Customers Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12">
@@ -671,54 +554,6 @@ export default function BoreholeDrillingPage() {
               { "@type": "City", name: "Edenvale" },
               { "@type": "AdministrativeArea", name: "Gauteng" },
             ],
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Borehole Drilling Services Gauteng",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Shallow Borehole Drilling (15–50m)",
-                    description: "Professional drilling for shallow water table areas, ideal for gardens and irrigation in Gauteng",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "12000",
-                    maxPrice: "18000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Standard Borehole Drilling (50–100m)",
-                    description: "Most common borehole installation for Gauteng residential and commercial properties",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "18000",
-                    maxPrice: "28000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Deep Borehole Drilling (100–150m+)",
-                    description: "Specialized deep drilling for dolomitic Pretoria areas and high-volume commercial requirements",
-                  },
-                  priceSpecification: {
-                    "@type": "PriceSpecification",
-                    minPrice: "28000",
-                    maxPrice: "45000",
-                    priceCurrency: "ZAR",
-                  },
-                },
-              ],
-            },
           }),
         }}
       />
@@ -735,7 +570,7 @@ export default function BoreholeDrillingPage() {
                 name: "How much does borehole drilling cost in Gauteng?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Borehole drilling in Gauteng costs ZAR 12,000–45,000+ depending on depth. Standard residential boreholes (50–100m) cost ZAR 18,000–28,000 including drilling, pump, pressure system and certification. Contact us for a free site assessment and fixed quote.",
+                  text: "Borehole drilling costs vary depending on depth, geology, pump requirements and site-specific factors. Contact us for a free site assessment and accurate fixed quote tailored to your property.",
                 },
               },
               {
