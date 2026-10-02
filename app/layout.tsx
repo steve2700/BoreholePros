@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    url: "https://boreholepros.co.za",
+    url: "./",
     siteName: "Borehole Pros",
     title: "Borehole Drilling Gauteng | Licensed Specialists | Borehole Pros",
     description:
@@ -69,8 +69,10 @@ export const metadata: Metadata = {
     },
   },
 
+  // "./" resolves against metadataBase for each page, so every page
+  // gets its own canonical URL instead of the homepage.
   alternates: {
-    canonical: "https://boreholepros.co.za",
+    canonical: "./",
   },
 
   manifest: "/manifest.json",
@@ -135,11 +137,19 @@ export default function RootLayout({
                 { "@type": "Service", name: "Solar Borehole Pumps" },
                 { "@type": "Service", name: "Borehole Water Testing" },
               ],
-              openingHours: "Mo-Su 06:00-20:00",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "1250",
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ],
+                opens: "00:00",
+                closes: "23:59",
               },
               contactPoint: {
                 "@type": "ContactPoint",

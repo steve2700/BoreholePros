@@ -23,8 +23,8 @@ const AW_ID = "AW-18489504818"
 // Paste the label from Google Ads (the part after the slash in
 // send_to: 'AW-18489504818/XXXXXXXX'). Leave "" until you have them;
 // events still fire, but no Ads conversion is counted.
-const CALL_CONVERSION_LABEL = ""
-const WHATSAPP_CONVERSION_LABEL = ""
+const CALL_CONVERSION_LABEL = "wa8kCLa09I0dELLovfBE"
+const WHATSAPP_CONVERSION_LABEL = "wskICJGf_Y0dELLovfBE"
 
 // Safe wrapper: works even if the gtag.js script has not finished loading yet.
 // gtag.js expects the real `arguments` object to be pushed onto dataLayer.
@@ -65,6 +65,8 @@ export default function ClickTracker() {
       if (label) {
         gtag("event", "conversion", {
           send_to: `${AW_ID}/${label}`,
+          value: 1.0,
+          currency: "ZAR",
           // beacon makes sure the hit is sent even if the dialer / WhatsApp opens right away
           transport_type: "beacon",
         })
