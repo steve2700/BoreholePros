@@ -1,10 +1,12 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
+import Script from "next/script"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
+import ClickTracker from "@/components/ClickTracker"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -103,33 +105,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Ads Tag */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17888460394"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17888460394');
-            `,
-          }}
-        />
-
-        {/* Google Ads Phone Call Conversion Tracking */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              gtag('config', 'AW-17888460394/CONVERSION_LABEL', {
-                'phone_conversion_number': '060 348 8268'
-              });
-            `,
-          }}
-        />
-
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
@@ -179,6 +154,23 @@ export default function RootLayout({
       </head>
 
       <body className="font-sans antialiased">
+        {/* Google tag (gtag.js) - Google Ads account AW-18489504818. Loaded once for every page. */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18489504818"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18489504818');
+          `}
+        </Script>
+
+        {/* Tracks every tel: and WhatsApp link click on all pages */}
+        <ClickTracker />
+
         <Header />
         {children}
         <Footer />
